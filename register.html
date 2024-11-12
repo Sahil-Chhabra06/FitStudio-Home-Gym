@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css ">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>FitStudio | Login</title>
+</head>
+
+<body class="register__body">
+    <div class="register__container" id="register__container">
+        <div class="form__container sign__up">
+            <form>
+                <h1>Create Account</h1>
+                <div class="social__icons">
+                    <a href="#" class="icons"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icons"><i class="fa-brands fa-apple"></i></a>
+                    <a href="#" class="icons"><i class="fa-brands fa-square-facebook"></i></a>
+                </div>
+                    <input type="text" id="name" placeholder="Name" onkeyup="validateName()" required>
+                    <div class="message" id="nameMessage"></div>
+                    <input type="email" id="email" placeholder="Email" onkeyup="validateEmail()" required>
+                    <div class="message" id="emailMessage"></div>
+                    <input type="password" id="password" placeholder="Create Password" onkeyup="validatePassword()" required>
+                    <div class="message" id="passwordMessage"></div>
+                    <input type="submit" id="formbtr" value="Register">
+                    <div><a id="goback" href="home.html"><i class="ri-arrow-left-line"></i>Go Back</a></div>
+            </form>
+        </div>
+        <div class="form__container sign__In">
+        <form>
+            <h1>Sign-In</h1>
+            <div class="social__icons">
+                <a href="#" class="icons"><i class="fa-brands fa-google-plus-g"></i></a>
+                <a href="#" class="icons"><i class="fa-brands fa-apple"></i></a>
+                <a href="#" class="icons"><i class="fa-brands fa-square-facebook"></i></a>
+            </div>
+                <input type="text" placeholder="User Name">
+                <input type="password" placeholder="Password">
+                <input type="submit" id="formbtr" value="Sign-In">
+                <a href="#" id="FYP">Forgot your password?</a>
+                <div><a id="goback" href="home.html"><i class="ri-arrow-left-line"></i>Go Back</a></div>
+
+        </form>
+    </div>
+    <div class="toggle__container">
+        <div class="toggle">
+            <div class="toggle__panal toggle__left">
+                <h1>Hello and Welcome</h1>
+                <p>Enter your details to register</p>
+                <button class="hidden" id="login">Sign-In</button>
+            </div>
+            <div class="toggle__panal toggle__right">
+                <h1>Welcome Back!</h1>
+                <p>Enter your account details to sign-in</p>
+                <button class="hidden" id="register">Register</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
